@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <link rel="icon" type="image/png" href="../images/Adigrat.png">
+    <title>web Developers.com</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/website_developer.css'>
+    <link rel="stylesheet" href="../font_awesome/css/all.css">
+    <script src='../jquary/jquery.js'></script>
+</head>
+
+<body onload="onloadfunction();">
+
+    <h2 id="webdevpagehead">
+        Website developer page.
+    </h2>
+    <center>
+        <div class="container">
+
+            <div class="chiled">
+                <div>
+                    <figure>
+                        <a href="../images/gech.jpg"><img class="getch" src="../images/getch.jpg" alt="Loading.."></a>
+                        <center>
+                            <figcaption style="color:rgb(255, 0, 0);font-weight:bold; text-shadow:1px 1px 0px black;font-family:abel;margin-top:10px;font-size:18px;">
+                                1. Getachew Sharew.</figcaption>
+                        </center>
+                    </figure>
+                </div>
+                <p class="para"><span class="fa fa-arrow-right"></span> Getachew sharew abrha is a student of Adigrat university. he studys Software Engineering and he is a junior programmer and web developer as well as mobile application developer.</p>
+            </div>
+
+            <div class="chiled">
+                <div>
+                    <figure>
+                        <a href="../images/Huluf.jpg"><img class="getch" src="../images/Huluf.jpg" alt="Loading.."></a>
+                        <center>
+                            <figcaption style="text-shadow:1px 0px 0px black;color:rgb(255, 0, 0);font-weight:bold;text-shadow:1px 1px 0px black;font-family:abel;margin-top:10px;font-size:18px;">
+                                2. Huluf Brhane.</figcaption>
+                        </center>
+                    </figure>
+                </div>
+                <p class="para"><span class="fa fa-arrow-right"></span>Huluf brhane G/michael is a student of Adigrat university. he studys Software Engineering and he is a junior programmer and web developer as well as mobile application developer.
+                </p>
+            </div>
+        </div>
+    </center>
+    <center>
+        <div>
+            <center>
+                <p style="text-align:center; text-shadow:1px 0px 0px black;color:rgb(255, 0, 0);font-family:abel;font-size:20px;font-weight:bold;margin-top:50px;">
+                    Contact Us Here. <br> <span id="downhand" style="position:absolute; color: rgb(255, 0, 0);font-size:20px;" class="fa fa-hand-point-down"></span></p>
+            </center>
+            <div class="contact">
+                <img class="getch1" src="../images/gech.jpg" style="border-radius: 50%;" width="70" height="70" alt="Loading">
+                <table>
+                    <tr>
+                        <td> <span style="color:rgb(56, 56, 160);" class="fab fa-facebook"></span></td>
+                        <td><span>Contact me with facebook</span></td>
+                    </tr>
+                    <tr>
+                        <td> <span style="color:rgb(4, 133, 192);" class="fab fa-telegram"></span></td>
+                        <td><span>Contact me with telegram</span></td>
+                    </tr>
+                    <tr>
+                        <td> <span style="color:rgb(0, 0, 0);" class="fab fa-google"></span></td>
+                        <td><span>Contact me with google</span></td>
+                    </tr>
+                    <tr>
+                        <td> <span style="color:rgb(155, 2,2);" class="fab fa-instagram"></span></td>
+                        <td><span>Contact me with instagram</span></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="contact contact1">
+                <img class="getch1" src="../images/Huluf.jpg" style="border-radius: 50%;" width="70" height="70" alt="Loading">
+                <table style="margin-bottom:30px;">
+                    <tr>
+                        <td> <span style="color:rgb(56, 56, 160);" class="fab fa-facebook"></span></td>
+                        <td><span>Contact me with facebook</span></td>
+                    </tr>
+                    <tr>
+                        <td> <span style="color:rgb(4, 133, 192);" class="fab fa-telegram"></span></td>
+                        <td><span>Contact me with telegram</span></td>
+                    </tr>
+                    <tr>
+                        <td> <span style="color:rgb(0, 0, 0);" class="fab fa-google"></span></td>
+                        <td><span>Contact me with google</span></td>
+                    </tr>
+                    <tr>
+                        <td> <span style="color:rgb(155, 2, 2);" class="fab fa-instagram"></span></td>
+                        <td><span>Contact me with instagram</span></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </center>
+    <center>
+        <small style=" color:black;font-family:ubuntu;font-weight:bold;text-align:center;width:100%;">
+           <span style="color:rgb(0, 0, 0);font-size:smaller;padding-right:5px;"
+               class="fa fa-copyright"></span>CopyRight Adigrat university 2020</small>
+    </center>
+    <script>
+        var counter = 0;
+        var timeout1 = setTimeout(typefirst, 50);
+
+        function typefirst() {
+            if (counter == 0) {
+                document.getElementById("webdevpagehead").style.visibility = "visible";
+                counter++;
+                document.getElementById("webdevpagehead").innerHTML = "W";
+                setTimeout(typefirst, 50);
+            } else if (counter == 1) {
+                counter++;
+                document.getElementById("webdevpagehead").innerHTML += "E";
+                setTimeout(typefirst, 50);
+            } else if (counter == 2) {
+                counter++;
+                document.getElementById("webdevpagehead").innerHTML += "B";
+                setTimeout(typefirst, 50);
+            } else if (counter == 3) {
+                counter++;
+                document.getElementById("webdevpagehead").innerHTML += "S";
+                setTimeout(typefirst, 50);
+            } else if (counter == 4) {
+                counter++;
+                document.getElementById("webdevpagehead").innerHTML += "I";
+                setTimeout(typefirst, 50);
+            } else if (counter == 5) {
+                counter++;
+                document.getElementById("webdevpagehead").innerHTML += "T";
+                setTimeout(typefirst, 50);
+            } else if (counter == 6) {
+                counter++;
+                document.getElementById("webdevpagehead").innerHTML += "E";
+                setTimeout(typefirst, 50);
+            } else if (counter == 7) {
+                counter++;
+                document.getElementById("webdevpagehead").innerHTML += " D";
+                setTimeout(typefirst, 50);
+            } else if (counter == 8) {
+                counter++;
+                document.getElementById("webdevpagehead").innerHTML += "E";
+                setTimeout(typefirst, 50);
+            } else if (counter == 9) {
+                counter++;
+                document.getElementById("webdevpagehead").innerHTML += "V";
+                setTimeout(typefirst, 50);
+            } else if (counter == 10) {
+                counter++;
+                document.getElementById("webdevpagehead").innerHTML += "E";
+                setTimeout(typefirst, 50);
+            } else if (counter == 11) {
+                counter++;
+                document.getElementById("webdevpagehead").innerHTML += "L";
+                setTimeout(typefirst, 50);
+            } else if (counter == 12) {
+                counter++;
+                document.getElementById("webdevpagehead").innerHTML += "O";
+                setTimeout(typefirst, 50);
+            } else if (counter == 13) {
+                counter++;
+                document.getElementById("webdevpagehead").innerHTML += "P";
+                setTimeout(typefirst, 50);
+            } else if (counter == 14) {
+                counter++;
+                document.getElementById("webdevpagehead").innerHTML += "E";
+                setTimeout(typefirst, 50);
+            } else if (counter == 15) {
+                counter++;
+                document.getElementById("webdevpagehead").innerHTML += "R";
+                setTimeout(typefirst, 50);
+            } else if (counter == 16) {
+                counter++;
+                document.getElementById("webdevpagehead").innerHTML += "S";
+                setTimeout(typefirst, 50);
+            } else if (counter == 17) {
+                counter++;
+                document.getElementById("webdevpagehead").innerHTML += " P";
+                setTimeout(typefirst, 50);
+            } else if (counter == 18) {
+                counter++;
+                document.getElementById("webdevpagehead").innerHTML += "A";
+                setTimeout(typefirst, 50);
+            } else if (counter == 19) {
+                counter++;
+                document.getElementById("webdevpagehead").innerHTML += "G";
+                setTimeout(typefirst, 50);
+            } else if (counter == 20) {
+                counter++;
+                document.getElementById("webdevpagehead").innerHTML += "E";
+                setTimeout(typefirst, 50);
+            } else if (counter == 21) {
+                setTimeout(wait, 3000);
+                counter = 0;
+            }
+            clearTimeout(timeout1);
+        }
+
+        function wait() {
+            document.getElementById("webdevpagehead").style.visibility = "hidden";
+            setTimeout(typefirst, 0);
+        }
+
+        function onloadfunction() {
+            $("#downhand").animate({
+                "paddingTop": "20px"
+            }, "slow");
+            $("#downhand").animate({
+                "paddingTop": "-20px"
+            }, "slow");
+            setTimeout(onloadfunction, 2000);
+        }
+    </script>
+</body>
+
+</html>

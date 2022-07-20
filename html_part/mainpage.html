@@ -1,0 +1,193 @@
+
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>mainpage.com</title>
+    <link rel="icon" type="image/png" href="../images/Adigrat.png">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>    
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/mainpage.css'>
+    <link rel="stylesheet" href="../font_awesome/css/all.css">
+    <script src="../jquary/jquery.js"></script>
+    <script src="../js/mainpage1.js"></script>
+    <script src="../js/open_main_page_navigation.js"></script>
+</head>
+
+<body id="body" onload="openfile();">
+    <div id="full-nav" style="z-index:2; width:0%;height:120vh;position:fixed;">
+        <div id="navigation" style="z-index:3; transition:0.2s; height:85%;width:300px;background-color: black;position:absolute;left:-500px;">
+            <span onclick="closenav();" class="fa fa-times" style="float: right;font-size:30px;cursor:pointer; color:red;margin-right:5px;"></span>
+            <center>
+                <p style="text-decoration: underline; font-size:25px; margin-top:40px;font-family:abel;color:white;font-weight:bold;text-shadow:1px 0px 0px red">What do you want ?</p>
+            </center>
+            <h3 class="nav-item" id="profiletext" onclick="openmodal();">View Profile</h3>
+            <br>
+            <a style="text-decoration: none" href="../html_part/about_us.html">
+                <h3 class="nav-item">About the page</h3>
+            </a>
+            <br>
+            <a style="text-decoration: none" href="../html_part/websitedeveloper.html">
+                <h3 class="nav-item">Website Developers </h3>
+            </a>
+            <a style="text-decoration: none" href="../html_part/about_university.html">
+                <h3 class="nav-item">About university </h3>
+            </a>
+        </div>
+    </div>
+    <div>
+        <center><img width="70" style="top:5px;" height="60" src="../images/Adigrat.png" alt="Loading"></center>
+        <center> <label id="teacherhead" style="border-radius:2px; position:relative;top:30px; padding:20px;padding-right:20px;padding-left:20px; border:1px solid white;color:black;font-family:Abel,monospace;font-weight:bold;">
+            Welcome ! Upload Files or View Files</label>
+        </center>
+        <strong onclick="opennavigation();" class="fa fa-bars"></strong>
+    </div>
+    <div class="modal-div" id="modal">
+        <div class="parent1">
+
+            <center><img height="60px" id="image" style="border-radius:50%" width="60px" src="../images/avatar.png" alt="Loading"></center>
+           <div class="headerLine">
+            <div class="firstline">
+                </div>
+                    <span id="betweenlines" style="padding-left:5px;padding-right:5px;font-weight:bold;font-family:abel;">View Files</span>
+                    <div class="secondline">
+                </div>
+            </div>
+            <div class="innerdiv">
+                <form>
+                    <b> <span >Username: </span></b>
+                    <br>
+                    <input style="font-weight:bold;" onkeyup="destroyme();" type="text" name="username" id="username" maxlength="20" placeholder="UserName" require>
+                    <br><br>
+                    <b><span >Password:</span></b>
+                    <br>
+                    <input  onkeyup="destroyme();" type="password" name="password" id="password" maxlength="20" placeholder="Password" require>
+                    <br><br>
+                    <b><span > Department: </span></b>
+                    <br>
+                    <select name="department" id="teacherdepartment2">
+                                <option value="Software_Engineering">Software engineering</option>
+                                <option value="Computer_Science">Computer science</option>
+                                <option value="Information_Technology">Information technology</option>
+                                <option value="Electrical_Engineering">Electrical engineering</option>
+                                <option value="Civil_Engineering">Civil engineering</option>
+                                <option value="Mechanical_Engineering">Mechanical engineering</option>
+                                <option value="medicine">Medicine</option>
+                                <option value="Chemical_Engineering">Chemical engineering</option>
+                                <option value="nurce">Nurce</option>
+                                <option value="cotm">COTM</option>
+                                <option value="agriculture">Agriculture</option>
+                               </select>
+                    <br><br>
+                    <b><span >Type</span></b>
+                    <br>
+                    <select onchange="openme();" id="type" name="department">
+                                <option value="Instructor">Instructor</option>
+                                <option value="Student" selected>Student</option>
+                                </select>
+                    <br><br>
+
+                    <b><span id="filedesc"  style="display:none">Your file: </span></b>
+                    <br>
+                    <input style="color:red;display:none" type="file" name="file" id="file" onclick="destroymessage();">
+                    <br>
+                    <p id="error_message" style="text-align:center; text-shadow:0px 0px 1px rgb(32, 30, 30); display:none; margin-left:10px;color:rgb(188, 44, 44);font-size:18px;font-weight: bold;">
+                        Error : field is empity</p><br>
+                    <input id="uploadid" style="font-family:abel; font-weight:bold; width:85%; text-align:center;padding:15px;cursor:pointer;border-radius:5px;" type="button" value="View uploaded files" name="upload" onclick=" return checkinput();">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <center>
+        <div class="parent2" id="parent2" style="width:400px;height:400px;">
+            <center><img height="60px" style="border-radius:50%;" width="60px" id="image1" src="../images/avatar.png" alt=""></center>
+            <div class="headerLine">
+                <div class="firstline">
+                    </div>
+
+                    <span style="color:black;padding-left:5px;padding-right:5px;font-weight:bold;font-family:abel;">Login</span>
+                    <div class="secondline">
+                </div>
+            </div>
+            <form>
+                <table class="table2">
+                    <tr>
+                        <td>
+                            <b> <span style="font-family:abel;">Username: </span></b>
+                        </td>
+                        <td>
+                            <input style="font-weight:bold;font-family:abel;" onkeyup="destroyme();" type="text" name="username" id="username1" maxlength="20" placeholder="UserName" require>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b><span style="font-family:abel;">Password:</span></b>
+                        </td>
+                        <td>
+                            <input style="font-weight:bold;font-family:abel;" onkeyup="destroyme();changeicon('password');" type="password" name="password" id="password1" maxlength="20" placeholder="Password" require>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b><span style="font-family:abel;"> Department: </span></b>
+                        </td>
+                        <td>
+                            <select style="font-family:abel;" name="department" id="teacherdepartment">
+                         <option value="Software_Engineering">Software engineering</option>
+                         <option value="Computer_Science">Computer science</option>
+                         <option value="Information_Technology">Information technology</option>
+                         <option value="Electrical_Engineering">Electrical engineering</option>
+                         <option value="Civil_Engineering">Civil engineering</option>
+                         <option value="Mechanical_Engineering">Mechanical engineering</option>
+                         <option value="Medicine">Medicine</option>
+                         <option value="Chemical_Engineering">Chemical engineering</option>
+                         <option value="Nurce">Nurce</option>
+                         <option value="COTM">COTM</option>
+                         <option value="Agriculture">Agriculture</option>
+                     </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b><span style="font-family: abel;">Type</span></b>
+                        </td>
+                        <td> <select onchange="openme();" id="type2" style="font-family:abel;" name="department">
+                                 <option value="Instructor">Instructor</option>
+                                 <option value="Student" selected>Student</option>
+                             </select>
+                        </td>
+                    </tr>
+                </table>
+                <p id="error_message1" style="display:none;margin-left:10px;color:rgb(255, 255, 255);font-family:abel;font-size:18px;font-weight: bold;">
+                    Error : field is empity</p>
+                <input name="Teacher_Login" style="margin-top:20px;font-family:abel;font-weight:bold; width:75%; text-align:center;padding:8px 20px 8px 20px;cursor:pointer;background:green;color:white;border-radius:5px;" type="button" value="Login" onclick="return checkform();">
+            </form>
+        </div>
+    </center>
+    
+    <center>
+        <div id="progressid" style="transform:scaleX(0); transition:0.4s; width:100%;height:125vh;background:rgba(0,0,0,0.8);position:absolute;top:0">
+            <center>
+                <h3 id="statustext" style="left:43%;color:rgb(217, 255, 0);top:350px;font-family:abel;letter-spacing:1px;position:absolute;">Uploading the file ...</h3>
+            </center>
+            <center>
+                <div style="width:100px;height:100px;position:absolute;left:50%;top:250px;">
+                    <p id="dote1" style=" color:white; position:absolute; font-size:50px;transform: rotate(0deg);">.</p>
+                    <p id="dote2" style=" color:white; position:absolute; font-size:50px;transform: rotate(40deg);">.</p>
+                    <p id="dote3" style=" color:white; position:absolute; font-size:50px;transform: rotate(80deg);">.</p>
+                    <p id="dote4" style=" color:white; position:absolute; font-size:50px;transform: rotate(120deg);">.</p>
+                    <p id="dote5" style=" color:white; position:absolute; font-size:50px;transform: rotate(160deg);">.</p>
+                    <p id="dote6" style=" color:white; position:absolute; font-size:50px;transform: rotate(200deg);">.</p>
+                    <p id="dote7" style=" color:white; position:absolute; font-size:50px;transform: rotate(240deg);">.</p>
+                    <p id="dote8" style=" color:white; position:absolute; font-size:50px;transform: rotate(280deg);">.</p>
+                    <p id="dote9" style=" color:white; position:absolute; font-size:50px;transform: rotate(320deg);">.</p>
+                </div>
+            </center>
+        </div>
+    </center>
+    <!-- <center>
+        <small style="color:black;font-family:ubuntu;font-weight:bold;text-align:center;width:100%;">
+            <small style="color:rgb(0, 0, 0);padding-right:5px;" class="fa fa-copyright"></small>CopyRight Adigrat university 2020</small>
+    </center> -->
+</body>
+
+</html>

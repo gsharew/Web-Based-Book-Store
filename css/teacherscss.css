@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: white !important
+    /* background-image: url('../images/backgroundimage2.png'); */
+}
+
+select {
+    padding: 0px !important;
+}
+
+.nav-item {
+    padding: 20px;
+    cursor: pointer;
+    font-family: monospace;
+    font-size: 17px;
+    text-shadow: 1px 1px 0px rgb(175, 154, 32);
+    color: black;
+    text-align: center;
+    margin-top: 60px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.7);
+}
+
+#openmodal:hover {
+    border: 1px solid gold;
+}
+
+.fa-bars {
+    padding: 5px;
+    position: absolute;
+    font-size: 25px;
+    color: black;
+    cursor: pointer;
+    top: 20px;
+    left: 20px;
+}
+
+#openmodal {
+    padding: 7px;
+    padding-right: 8px;
+    padding-left: 8px;
+    border: 1px solid white;
+    position: absolute;
+    right: 20px;
+    color: #3b2d2d;
+    top: 20px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.parent1 {
+    width: 400px;
+    height: 620px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-top: 80px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    font-family: abel, monospace !important;
+    overflow-x: hidden;
+    transform: scale(1);
+    background-color: black;
+    font-size: 18px;
+    color: white !important;
+    /* background-color: rgb(190, 187, 187); */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+}
+
+.parent1 img {
+    margin-top: 20px;
+}
+
+.innerdiv {
+    width: 100%;
+    position: relative;
+    padding: 20px !important;
+}
+
+.parent1 input[type='file'],
+select {
+    width: 90%;
+    padding: 5px;
+}
+
+input[type='password'],
+input[type='text'] {
+    width: 85%;
+}
+
+input[type='file'] {
+    padding: 0 !important;
+    border: 1px solid white;
+    border-radius: 8px;
+}
+
+.firstline {
+    width: 36%;
+    height: 1px;
+    display: inline-block;
+    background: white;
+}
+
+.secondline {
+    width: 36%;
+    height: 1px;
+    display: inline-block;
+    background-color: white;
+}
+
+.parent1 form {
+    margin-top: 30px;
+}
+
+.parent2 {
+    width: 360px;
+    height: 500px;
+    background-color: rgb(190, 187, 187);
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+    border-radius: 5px;
+    position: absolute;
+    top: -1100px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    transition: 0.5s;
+}
+
+.parent2 form {
+    margin-top: 30px;
+}
+
+.parent2 img {
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.parent2 .firstline {
+    width: 40%;
+}
+
+.parent2 .secondline {
+    width: 40%;
+}
+
+.modal-div {
+    transition: 1s;
+}
+
+@media (max-width:700px) {
+    #statustext {
+        left: 35% !important;
+    }
+}

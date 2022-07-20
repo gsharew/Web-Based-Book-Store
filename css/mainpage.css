@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+}
+
+body {
+    
+    background-color: #8EC5FC;
+    background-image: linear-gradient(90deg, #8EC5FC 0%, #E0C3FC 100%);
+    /* background-color: #0093E9; */
+    /* background-image: linear-gradient(160deg,#0093E9, #80D0C7 100%); */
+}
+
+select {
+    padding: 0px !important;
+}
+
+.nav-item {
+    padding: 20px;
+    cursor: pointer;
+    font-family: monospace;
+    font-size: 17px;
+    text-shadow: 1px 1px 0px rgb(175, 154, 32);
+    color: white;
+    text-align: center;
+    margin:10px;
+    margin-top: 60px;
+    border-radius:5px;
+    border:1px solid white;
+}
+
+#openmodal:hover {
+    border: 1px solid gold;
+}
+
+.fa-bars {
+    padding: 5px;
+    position: absolute;
+    font-size: 25px;
+    color: black;
+    cursor: pointer;
+    top: 20px;
+    left: 20px;
+}
+
+#openmodal {
+    padding: 7px;
+    padding-right: 8px;
+    padding-left: 8px;
+    border: 1px solid white;
+    position: absolute;
+    right: 20px;
+    color: #3b2d2d;
+    top: 20px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.parent1 {
+    width: 450px;
+    height: fit-content;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-top: 80px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    font-family: abel, monospace !important;
+    overflow-x: hidden;
+    transform: scale(1);
+    font-size: 18px;
+    /* background-color: rgb(190, 187, 187); */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+}
+
+.headerLine
+{
+     display: flex;
+}
+
+.firstline {
+    height: 1px;
+    background: rgb(104, 99, 99);
+    flex: 1;
+    margin:5px;
+}
+
+.secondline {
+    flex: 1;
+    margin: 5px;
+    height: 1px;
+    background-color: rgb(104, 99, 99);
+}
+
+
+.parent1 img {
+    margin-top: 20px;
+}
+
+.innerdiv {
+    width: 100%;
+    position: relative;
+    padding: 20px !important;
+}
+
+select {
+   height:35px;
+}
+
+input[type = 'password'],
+input[type = 'text'],
+select {
+    width: 85%;
+    padding:10px;
+    outline-style: none;
+}
+
+input[type='file'] {
+    width:84%;
+    padding: 0 !important;
+    border: 1px solid white;
+    border-radius: 8px;
+}
+
+.parent1 form {
+    margin-top: 30px;
+}
+
+.parent2 {
+    height: fit-content;
+    background-image: linear-gradient(ro tight, #74ebd5 0%, #9face6 100%);
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+    border-radius: 5px;
+    margin-top: 50px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    transform: scale(0);
+    left: 0;
+    right: 0;
+    transition: 0.5s;
+
+}
+
+.parent2 form {
+    margin-top: 35px;
+}
+
+.parent2 form .table2 tr
+{
+     margin-top:20px;
+}
+
+.parent2 img {
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.parent2 .firstline {
+    width: 40%;
+}
+
+.parent2 .secondline {
+    width: 40%;
+}
+
+
+.modal-div {
+    transition: 1s;
+}
+
+@media (max-width:700px) {
+    #statustext {
+       left: 30% !important;
+       }
+
+    .parent1
+    {
+         width:95%;
+         height: fit-content;
+         margin-left:10px;
+         margin-right:10px;
+         margin-top:100px;
+    }
+
+    .headerLine
+    {
+         width:100%;
+    }
+
+    .headerLine .firstline, .secondline
+    {
+         margin:0px;
+    }
+}
